@@ -3,7 +3,7 @@ const monica = document.createTextNode('Monica Geller: Você é organizado(a) e 
 const joey = document.createTextNode('Joey Tribbiani:  Você pode não saber muito sobre *Friends*, mas seu charme é inegável! Talvez precise assistir a mais episódios, mas lembre-se: "How you doin’?"')
 const rachel= document.createTextNode('Rachel Green: Você conhece bastante a série, assim como Rachel conhece o mundo da moda! Mas ainda pode melhorar – continue assistindo para brilhar como ela.')
 let contador = 0
-var pop = document.querySelector('.pop-up-unable')
+var pop = document.querySelector('.pop-up')
 document.querySelector('.conferir').addEventListener('click', (e) => {
     e.preventDefault();
     const tds = document.querySelectorAll('input[type=radio]:checked')
@@ -25,5 +25,5 @@ document.querySelector('.conferir').addEventListener('click', (e) => {
 })
 document.querySelector('.close-button').addEventListener('click', (e)=> {
     e.preventDefault;
-    pop.classList.toggle('lala')
+    pop.classList.toggle('pop-up-unable')
 })
